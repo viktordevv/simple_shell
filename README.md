@@ -1,13 +1,13 @@
-# This is S-hell
+# This is S-hell 🔥
 ## We are a group from C-17 in Medellin, Colombia that has the task of completing the project **Simple Shell**
 
 At the end of this project, students should be able to create a shell console.
 
 
-## Objetives 
+## Objetives 👌
 
 
-## Requirements
+## Requirements ✔️
 
 - Allowed editors: vi, vim, emacs
 - All your files will be compiled on Ubuntu 20.04 LTS using gcc, using the options -Wall -Werror -Wextra -pedantic -std=gnu89
@@ -19,11 +19,11 @@ At the end of this project, students should be able to create a shell console.
 - All your header files should be include guarded
 - Use system calls only when you need to (why?)
 
-# Alert 
+# Alert 🚩🚩🚩🚩🚩
 
 There should be one project repository per group. If you clone/fork/whatever a project repository with the same name before the second deadline, you risk a 0% score.
 
-# List of allowed functions and system calls
+# List of allowed functions and system calls 🙌
 - access (man 2 access)
 - chdir (man 2 chdir)
 - close (man 2 close)
