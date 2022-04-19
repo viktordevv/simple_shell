@@ -8,12 +8,11 @@
 int ptr_env(void)
 {
 	int x = 0;
-	char a = '\n';
 
-	while (hell_env[x] != NULL)
+	while (environ[x])
 	{
-		write(1, hell_env[x], (_strlen(hell_env[x] + 1)));
-		write(1, &a, 1);
+		write(1, environ[x], strlen(environ[x]));
+		write(1, "\n", 1);
 		x++;
 	}
 
@@ -38,7 +37,7 @@ int exit_hell(void)
  */
 char *get_built(char *comm, char *dirc)
 {
-	char s *;
+	char *s;
 	size_t a;
 	int i = 0;
 

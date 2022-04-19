@@ -8,23 +8,62 @@
 
 char **supertoken(char *str)
 {
-        if (str == NULL)
-                break;
+	char **tk = NULL;
+	char *spc = " \t\r\n";
+	int tm = 0;
+	int i = 0;
 
-        while (str != NULL)
-        {
-                char **tokens = supertoken(str);
-                int i = 0;
-                while (tokens[i] != NULL)
-                {
-                        printf("%s\n", tokens[i]);
-                        i++;
-                }
-                str = strtok(NULL, DELIM);
-                return (token);
-        }
+	if (str == NULL)
+	{
+		return (NULL);
+	}
+	tm = cnt(str, " ");
+
+	tk = malloc(sizeof(char *) * tm + 1);
+	if (!tk)
+	{
+		free(tk);
+		return (NULL);
+	}
+	tk[0] = strtok(str, spc);
+
+	for (i = 1; i < tm; i++)
+	{
+		tk[i] = strtok(NULL, spc);
+	}
+	return (tk);
 }
-/* if(str == NULL)
+
+int cnt(char *str, char *limit)
 {
+	int wrd = 0;
+
+	while (*str)
+
+		if (*str == *limit || *str == '\n' || *str == '\t')
+		{
+			str++;
+			continue;
+		}
+		else if	(*str != *limit)
+		{
+			wrd++;
+			while (*str != *limit && *str != '\n' && *str != '\t')
+			{
+				str++;
+			}
+		}
+
+	return (wrd);
+}
+
+
+
+
+/* if(str == NULL)
+
         printf("%s\n", str);
-} */
+
+
+         while (str != NULL)
+ */

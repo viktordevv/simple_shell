@@ -6,16 +6,26 @@
  * Return: char*
  */
 
-char *env_get(const char *name)
+/* char *envget()
 {
-    int x = p = 0;
+    char m[] = "PATH";
+
+    syscall(__NR_write, STDOUT_FILENO, m, sizeof(m)-1);
+    syscall(__NR_write, STDOUT_FILENO, "\n", 1);
+    syscall(__NR_fsync, STDOUT_FILENO );
+
+    return (N);
+}
+ */
+/*     int x = 0;
+    int p = _strlen((char *)name);
     char *value, *variable;
-    p = _strlen((char *)name);
 
     for (;hell_env[x] != NULL; x++)
         {
-        variable = _strtok(hell_env[x], "=");
-        value = _strtok(NULL, "=");
+        value = hell_env[x];
+        variable = _charlocate(value, "=");
+
         if (_strcomp(variable, name) == 0)
         {
             return (value);
@@ -23,3 +33,16 @@ char *env_get(const char *name)
     }
         return (NULL);
 }
+
+
+char *_charlocate(char *s, char c)
+{
+	int x;
+
+	for (x = 0; s[x] != '\0'; x++)
+	{
+		if (s[x] == c)
+			return (&s[x]);
+	}
+	return (0);
+} */

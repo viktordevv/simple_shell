@@ -64,7 +64,5 @@ Your shell will be compiled this way:
 # Authors 🤖
 
 ### Viktor Krill - @ViktorKrill <a href="https://www.twitter.com/Dev_Vikk" rel="nofollow"> <img width="18px" align="center" src="https://raw.githubusercontent.com/rahulbanerjee26/githubAboutMeGenerator/main/icons/twitter.svg" style="max-width: 100%;"></a> <a href="https://www.github.com/viktorkrill"> <img width="18px" align="center" src="https://raw.githubusercontent.com/rahulbanerjee26/githubAboutMeGenerator/main/icons/github.svg" style="max-width: 100%;"></a>
- 
-### Juan Muñoz - @Kadzahk <a href="https://www.twitter.com/Kadzahk" rel="nofollow"> <img width="18px" align="center" src="https://raw.githubusercontent.com/rahulbanerjee26/githubAboutMeGenerator/main/icons/twitter.svg" style="max-width: 100%;"></a> <a href="https://www.github.com/Kadzahk"> <img width="18px" align="center" src="https://raw.githubusercontent.com/rahulbanerjee26/githubAboutMeGenerator/main/icons/github.svg" style="max-width: 100%;"></a>
-  
 
+### Juan Muñoz - @Kadzahk <a href="https://www.twitter.com/Kadzahk" rel="nofollow"> <img width="18px" align="center" src="https://raw.githubusercontent.com/rahulbanerjee26/githubAboutMeGenerator/main/icons/twitter.svg" style="max-width: 100%;"></a> <a href="https://www.github.com/Kadzahk"> <img width="18px" align="center" src="https://raw.githubusercontent.com/rahulbanerjee26/githubAboutMeGenerator/main/icons/github.svg" style="max-width: 100%;"></a>

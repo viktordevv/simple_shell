@@ -7,26 +7,37 @@
 
 char *read_the_line(void)
 {
-        char *prompt = "Hell% ", *line = NULL;
-        size_t z = 0;
+
         int i = 0;
+        char *prompt = "Hell% ", *line = NULL;
+        size_t len = 0;
 
-        if (isatty(STDIN_FILENO) == 0)
-                return (NULL);
-        printf("%s", prompt);
-        line = malloc(sizeof(char) * BUFF_SZ);
-        i = getline(&line, &z, stdin);
+        while (line[i] != '\n')
+        {
+                write(1, prompt, strlen(prompt));
+                getline(&line, &len, stdin);
+                if (line[0] == '\n')
 
-        if (line == NULL)
-        {
-                perror("malloc");
-                free(line);
-                exit(EXIT_FAILURE);
-        }
-        if (i == -1)
-        {
-                free(line);
-                return (NULL);
+                        if (isatty(STDIN_FILENO) == 0)
+                                return (0);
+                printf("%s", prompt);
+                line = malloc(sizeof(char) * BUFF_SZ);
+                i = getline(&line, &len, stdin);
+
+                if (line == NULL)
+                {
+                        perror("malloc");
+                        free(line);
+                        exit(EXIT_FAILURE);
+                }
+
+                if (i == -1)
+                {
+                        free(line);
+                        return (0);
+                }
+                i++;
+                return (0);
         }
         return (line);
-}
+
