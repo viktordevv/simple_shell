@@ -2,6 +2,58 @@
 .\" Contact AUTHORS to correct errors or typos.
 .TH simple_shell 0 "8 April 2022" "1.0" "simple-shell man page"
 
+.SH SYNOPSIS
+.B hsh
+[command]
+
+.SH DESCRIPTION
+This program is a simple shell
+
+
+.SH INITIALIZATION
+To use the ghost shell the user needs to compile using: gcc.
+
+.SH The command for compiler:
+gcc -Wall -Wextra -Werror -pedantic *.c -o hsh
+
+.B hsh
+is a shell command for executes commands.
+
+
+.SH EXAMPLES
+.B 1. Non interactice mode example:
+$ echo "/bin/ls" | ./hsh
+hsh main.c shell.c test_ls_2
+$
+$ cat test_ls_2
+/bin/ls
+/bin/ls
+$
+$ cat test_ls_2 | ./hsh
+hsh main.c shell.c test_ls_2
+hsh main.c shell.c test_ls_2
+$
+
+.B 2. Interactice mode example:
+$ ./hsh
+($) /bin/ls
+hsh main.c shell.c
+($)
+($) exit
+$
+
+.SH BUILT-IN COMMANDS
+.B env
+- prints environ Variables
+.B exit
+- exits the hell
+
+.SH BUGS
+No known bugs.
+
+.SH RETURN
+shell basic
+
 .SH COPYRIGHT
 See AUTHORS
 
