@@ -37,12 +37,12 @@
 
 char *_charlocate(char *s, char c)
 {
-	int x;
+    int x;
 
-	for (x = 0; s[x] != '\0'; x++)
-	{
-		if (s[x] == c)
-			return (&s[x]);
-	}
-	return (0);
+    for (x = 0; s[x] != '\0'; x++)
+    {
+        if (s[x] == c)
+            return (&s[x]);
+    }
+    return (0);
 } */

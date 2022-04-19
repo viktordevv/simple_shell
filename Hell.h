@@ -42,8 +42,8 @@ char *get_built(char *comm, char *dirc);
 char *_charlocate(char *s, char c);
 void _itoa(long i, char *str);
 void hell_error(int no_error, char *msg, long c);
-int(*find_command(char *f))(void);
+int (*find_command(char *f))(void);
 int cnt(char *str, char *limit);
-int forky_ts(void);
+int forky(void);
 
 #endif

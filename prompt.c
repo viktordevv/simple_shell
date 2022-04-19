@@ -14,12 +14,14 @@ char *read_the_line(void)
 
         while (line[i] != '\n')
         {
+                if (isatty(STDIN_FILENO) == 0)
+                        return (0);
                 write(1, prompt, strlen(prompt));
                 getline(&line, &len, stdin);
+                i++;
+        }
                 if (line[0] == '\n')
 
-                        if (isatty(STDIN_FILENO) == 0)
-                                return (0);
                 printf("%s", prompt);
                 line = malloc(sizeof(char) * BUFF_SZ);
                 i = getline(&line, &len, stdin);
@@ -39,5 +41,4 @@ char *read_the_line(void)
                 i++;
                 return (0);
         }
-        return (line);
 
