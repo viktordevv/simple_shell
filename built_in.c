@@ -1,10 +1,8 @@
 #include "Hell.h"
-
 /**
- * _ptr_env - this is funtion
+ * ptr_env - this is funtion
  * Return: char**
  */
-
 int ptr_env(void)
 {
 	int x = 0;
@@ -23,7 +21,6 @@ int ptr_env(void)
  * exit_hell - this is funtion
  * Return: void
  */
-
 int exit_hell(void)
 {
 	return (1);

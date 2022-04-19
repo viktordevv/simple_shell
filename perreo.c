@@ -1,5 +1,12 @@
 #include "Hell.h"
 
+/**
+ * hell_error - this is funtion
+ * @no_error: int
+ * @msg: char
+ * @c: char
+ */
+
 void hell_error(int no_error, char *msg, long c)
 {
 	int ln = 0;

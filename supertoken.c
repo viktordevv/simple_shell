@@ -2,7 +2,7 @@
 
 /**
  * supertoken - this is funtion
- * @str:
+ * @str: char
  * Return: char**
  */
 
@@ -33,7 +33,12 @@ char **supertoken(char *str)
 	}
 	return (tk);
 }
-
+/**
+ * cnt - this is funtion
+ * @str: char
+ * @limit: char
+ * Return: wrd
+ */
 int cnt(char *str, char *limit)
 {
 	int wrd = 0;
@@ -56,14 +61,3 @@ int cnt(char *str, char *limit)
 
 	return (wrd);
 }
-
-
-
-
-/* if(str == NULL)
-
-        printf("%s\n", str);
-
-
-         while (str != NULL)
- */
