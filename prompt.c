@@ -22,7 +22,7 @@ char *read_the_line(void)
 	}
 		if (line[0] == '\n')
 
-		printf("%s", prompt);
+		write(1, prompt, strlen(prompt));
 		line = malloc(sizeof(char) * BUFF_SZ);
 		i = getline(&line, &len, stdin);
 
