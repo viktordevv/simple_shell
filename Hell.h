@@ -1,6 +1,8 @@
 #ifndef HELL_H
 #define HELL_H
 
+/** bookstores **/
+
 #include <stdio.h>
 #include <unistd.h>
 #include <stddef.h>
@@ -14,11 +16,16 @@
 #include <fcntl.h>
 #include <sys/syscall.h>
 
+/** Structures **/
+
 typedef struct commander
 {
 	char *variable;
 	int (*b)();
 } commander_t;
+
+
+/** MACROS **/
 
 #define BUFF_SZ 1024
 #define DELIM " \t\n"
@@ -27,6 +34,8 @@ typedef struct commander
 #define N NULL
 
 extern char **environ;
+
+/** Funtions **/
 
 int _strlen(char *s);
 int _strcomp(char *path, char *match, size_t n);
