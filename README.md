@@ -28,8 +28,6 @@ At the end of this project, students should be able to create a shell console.
 # Builtins 🚩
  - exit
  - env
- - ls
- - ctrl + D
 
 # How to Install 🙌
 1. Clone this repository: git clone "https://github.com/viktorkrill/simple_shell.git"
